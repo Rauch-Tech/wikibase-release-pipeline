@@ -24,7 +24,7 @@ This repository contains the Wikibase Suite toolset used for [building](./build)
 
 ### Build
 
-```
+```bash
 # Build all Wikibase Suite images
 $ ./nx build
 
@@ -68,18 +68,18 @@ $ ./nx test -- repo --setup
 
 ### Deploy
 
-```
+```bash
 $ cd deploy
 $ docker compose up --wait
 ```
 
-Find more details in the [WBS Deploy documentation](./deploy/README.md).
+Find more details in the [deploy documentation](./deploy/README.md).
 
 ## Development setup
 
 To take advantage of the git hooks we've included, you'll need to configure git to use the `.githooks/` directory.
 
-```
+```bash
 $ git config core.hooksPath .githooks
 ```
 
