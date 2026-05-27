@@ -1,13 +1,16 @@
 # Wikibase Suite release pipeline
 
+This repository contains both Wikibase Suite and the tools used to update, build, test, publish, and release it.
+
+## Install Wikibase Suite
+
 Wikibase Suite is a supported configuration for running your own [Wikibase](https://wikiba.se) on your own server and maintaining a knowledge graph similar to [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) as part of the Linked Open Data initiative.
 
-> [!IMPORTANT]
-> This repository contains both Wikibase Suite and the tools used to update, build, test, publish, and release it. To install or maintain Wikibase Suite on your own server start here: [Wikibase Suite guide](./deploy/README.md).
+To install or maintain Wikibase Suite on your own server, start here: [Wikibase Suite guide](./deploy/README.md).
 
 ## Community and support
 
-- [Wikibase Suite Guide](./deploy/README.md)
+- [Wikibase Suite guide](./deploy/README.md)
 - [Wikibase website](https://wikiba.se/)
 - [Wikibase Suite Telegram community channel](https://t.me/wikibasesuite)
 - [Wikibase Telegram community channel](https://t.me/+WBsf9-C9KPuMZCDT)
