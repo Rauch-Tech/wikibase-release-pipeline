@@ -12,7 +12,6 @@ To install or maintain Wikibase Suite on your own server, start here: [Wikibase 
 
 - [Wikibase Suite guide](./deploy/README.md)
 - [Wikibase website](https://wikiba.se/)
-- [Wikibase Suite Telegram community channel](https://t.me/wikibasesuite)
 - [Wikibase Telegram community channel](https://t.me/+WBsf9-C9KPuMZCDT)
 - [Wikibase Mastodon](https://wikis.world/@Wikibase)
 - [Wikibase user group mailing list](https://lists.wikimedia.org/postorius/lists/wikibaseug.lists.wikimedia.org/?source=post_page)
