@@ -48,7 +48,10 @@ The image reads setup environment variables when it creates `LocalSettings.php`.
 
 ### Environment variables
 
-These values are used for initial setup only and should not be changed without recreating the instance. `METADATA_CALLBACK` is the exception and may be changed after initial setup.
+These values are used for initial setup only and should not be changed without recreating the instance. To change them after first setup, follow the [resetting an instance](../../deploy/docs/resetting.md) procedure.
+
+> [!NOTE]
+> `METADATA_CALLBACK` is an exception and may be changed after initial setup.
 
 Variables in **bold** are required on first launch without `LocalSettings.php` in the configuration volume. The image will fail to start if one of those variables does not have a value. Default values do not need to be overwritten.
 
