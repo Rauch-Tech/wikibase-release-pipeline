@@ -17,7 +17,7 @@ To install or maintain Wikibase Suite on your own server, start here: [Wikibase 
 - [Wikibase Mastodon](https://wikis.world/@Wikibase)
 - [Wikibase user group mailing list](https://lists.wikimedia.org/postorius/lists/wikibaseug.lists.wikimedia.org/?source=post_page)
 - [Wikibase Suite Phabricator board](https://phabricator.wikimedia.org/project/board/5755/)
-- [Wikibase Suite team email](mailto:wikibase-suite@wikimedia.de)
+- [Wikibase Suite team email](mailto:wikibase-suite-support@wikimedia.de)
 
 ## Advanced: Docker images
 
