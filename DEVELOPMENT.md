@@ -69,6 +69,16 @@ To take advantage of the git hooks we've included, you'll need to configure git 
 $ git config core.hooksPath .githooks
 ```
 
+## GitHub secret and key management
+
+Use GitHub and your secret manager as the source of truth for sensitive material. Do not commit runtime secrets, credentials, private keys, or keystores.
+
+1. Store tokens/passwords in GitHub Actions secrets (`Settings` -> `Secrets and variables` -> `Actions`) at the repository, environment, or organization scope as appropriate.
+2. Keep deploy keys scoped per repository, defaulting to read-only. Only use write-enabled deploy keys when automation explicitly needs write access.
+3. Set a random webhook secret for each webhook integration and verify `X-Hub-Signature-256` on every inbound webhook request.
+4. Keep certificates and keystores outside this repository (for example in a vault, cloud secret manager, or host-level protected storage), and mount/inject them at runtime.
+5. If any secret was committed, revoke/rotate it immediately and clean git history before continuing normal development.
+
 ## Testing
 
 Tests are organized in suites, which can be found in `test/suites`. Each suite runs a series of specs (tests) found in the `test/specs` directory. Which specs run by default in each suite are specified in the `.config.ts` file in each suite directory under the `specs` key.

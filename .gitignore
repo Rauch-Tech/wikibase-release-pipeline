@@ -38,5 +38,19 @@ npm-debug.log
 .DS_Store
 Thumbs.db
 
+# Sensitive material (never commit)
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
+*.kdbx
+*.pkcs12
+*.der
+*.csr
+**/id_rsa
+**/id_ed25519
+
 .nx/cache
 .nx/workspace-data
