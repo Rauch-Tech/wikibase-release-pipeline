@@ -1,0 +1,31 @@
+{
+  "patches": {
+    "pkg:npm/fast-uri@3.0.1": {
+      "uuid": "2d436ef0-7512-47e5-ac81-13c88d5994af",
+      "exportedAt": "Thu, 30 Jul 2026 17:09:17 GMT",
+      "files": {
+        "index.js": {
+          "beforeHash": "b0ae02de2afc12596af85f953ea06d0929773e460dc7d7032b4a33f067674b3a",
+          "afterHash": "f42405f2f6ab7ce1825b81d42a4b6621a952eb46eb501d9929501bb66a01a9bd"
+        },
+        "lib/utils.js": {
+          "beforeHash": "848d8bd96b30d2e22fabc8da6922eebb9a81c5d9fb87e6abf14b3799b922a737",
+          "afterHash": "f12ede0530eddd887f05f09330bfac8c1e21a5bc80bb3abb3c53eb1bc92c35dd"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-v39h-62p7-jpjc": {
+          "cves": [
+            "CVE-2026-6322"
+          ],
+          "summary": "fast-uri vulnerable to host confusion via percent-encoded authority delimiters",
+          "severity": "HIGH",
+          "description": "### Impact\n\n`fast-uri` v3.1.1 and earlier decodes percent-encoded authority delimiters (`%40` as `@`, `%3A` as `:`) inside the host component and serializes them back as raw characters. This changes the URI structure, turning a hostname into userinfo plus a different host.\n\nFor example, `http://trusted.com%40evil.com/` normalizes to `http://trusted.com@evil.com/`, which reparses as host `evil.com` with userinfo `trusted.com`.\n\nApplications that normalize untrusted URLs before host allowlist checks, redirect validation, or outbound request routing can be steered to a different authority than the original URL appeared to contain.\n\n### Patches\n\nUpgrade to `fast-uri` >= 3.1.2, or if you are in the v2.x release line, v2.4.1\n\n### Workarounds\n\nNone. Upgrade to the patched version."
+        }
+      },
+      "description": "",
+      "license": "",
+      "tier": "free"
+    }
+  }
+}
