@@ -82,7 +82,7 @@ if [ "$PUBLISH" == true ]; then
 # build/test in CI
 elif [ "$GITHUB_ACTIONS" == true ]; then
 	IMAGE_REGISTRY=ghcr.io
-	IMAGE_NAMESPACE="${GITHUB_REPOSITORY_OWNER}/wikibase"
+	IMAGE_NAMESPACE="${GITHUB_REPOSITORY_OWNER,,}/wikibase"
 
 # local build
 else
